@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalendarTestDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ca4-ge-zdq" customClass="CalendarView" customModule="CalendarView">
+                                <rect key="frame" x="0.0" y="97" width="320" height="231"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="显示月年" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMz-ui-YAZ">
+                                <rect key="frame" x="0.0" y="36" width="320" height="44"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pMz-ui-YAZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="0en-hs-VQM"/>
+                            <constraint firstItem="Ca4-ge-zdq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-24" id="2YC-Ln-bqx"/>
+                            <constraint firstItem="Ca4-ge-zdq" firstAttribute="top" secondItem="pMz-ui-YAZ" secondAttribute="bottom" constant="17" id="8fi-wr-DIg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ca4-ge-zdq" secondAttribute="trailing" constant="-20" id="ILG-H4-y7J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ca4-ge-zdq" secondAttribute="trailing" constant="-16" id="RjD-db-FUH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pMz-ui-YAZ" secondAttribute="trailing" constant="-20" id="WDc-zo-l7E"/>
+                            <constraint firstItem="pMz-ui-YAZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="ZKX-k1-bi7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ca4-ge-zdq" secondAttribute="bottom" constant="304" id="ZQj-Xu-iW8"/>
+                            <constraint firstItem="Ca4-ge-zdq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="alF-14-WEg"/>
+                            <constraint firstItem="Ca4-ge-zdq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="13" id="bcr-Fq-MMa"/>
+                            <constraint firstItem="Ca4-ge-zdq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="77" id="dnc-Nr-cvz"/>
+                            <constraint firstItem="Ca4-ge-zdq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ekR-Ne-hIv"/>
+                            <constraint firstItem="Ca4-ge-zdq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-71.5" id="oH8-wU-bWK"/>
+                            <constraint firstItem="Ca4-ge-zdq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vhd-KS-Eh8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2YC-Ln-bqx"/>
+                                <exclude reference="RjD-db-FUH"/>
+                                <exclude reference="alF-14-WEg"/>
+                                <exclude reference="bcr-Fq-MMa"/>
+                                <exclude reference="vhd-KS-Eh8"/>
+                                <exclude reference="ZQj-Xu-iW8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="calendar" destination="Ca4-ge-zdq" id="JyU-xn-4EX"/>
+                        <outlet property="monthYear" destination="pMz-ui-YAZ" id="6yV-KB-3DO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="255"/>
+        </scene>
+    </scenes>
+</document>
